@@ -14,8 +14,9 @@ speed = 9600
 
 try:
     ser = serial.Serial(arduino_tty, speed)
-except serial.serialutil.SerialException:
+except serial.serialutil.SerialException as err:
     print 'device {0}, not found'.format(arduino_tty)
+    print unicode(err)
     exit(0)
 else:
     print 'connect to {0}, speed={1}\nwhite data\n'.format(arduino_tty, speed)
