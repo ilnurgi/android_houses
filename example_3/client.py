@@ -23,7 +23,7 @@ except serial.serialutil.SerialException:
 else:
     print 'connect to {0}, speed={1}\nwhite data\n'.format(arduino_tty, speed)
 
-corridor_light_last = 1
+corridor_light_last = -1
 counter = 1
 counter_max = 10
 
