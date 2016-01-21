@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Умный дом</title>
+    </head>
+
+    <body>
+        <ul>
+            {% for v in corridor_lights %}
+                <li>{{ v.date }}, {{ v.value }}</li>
+            {% endfor %}
+        </ul>
+    </body>
+
+</html>
