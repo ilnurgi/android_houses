@@ -44,7 +44,7 @@ while True:
                 'http://ilnurgi1.ru/arduino/', 
                 data={
                     'light': data,
-                    'date': now.strftime('%Y.%m.%d %H:%m:%S')
+                    'date': now.strftime('%Y.%m.%d %H:%M:%S')
                 })
             print 'post'
             corridor_light_last = corridor_light
