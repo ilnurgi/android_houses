@@ -46,5 +46,5 @@ while True:
                     'light': data,
                     'date': now.strftime('%Y.%m.%d %H:%m:%S')
                 })
-            print 'post',
+            print 'post'
             corridor_light_last = corridor_light
