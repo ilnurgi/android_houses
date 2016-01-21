@@ -41,7 +41,7 @@ while True:
         if corridor_light != corridor_light_last:        
             now = datetime.datetime.now()
             requests.post(
-                'http://ilnurgi1.ru/arduino/', 
+                'http://ilnurgi1.ru:5000', 
                 data={
                     'light': data,
                     'date': now.strftime('%Y.%m.%d %H:%M:%S')
